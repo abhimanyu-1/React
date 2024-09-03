@@ -1,0 +1,32 @@
+.d-main{
+    height: 570px;
+    display: flex;
+}
+.d-image{
+    width: 600px;
+}
+.d-image img{
+    height: 400px;
+    width: 500px;
+    margin: 50px;
+}
+.d-content{   
+    margin-left: 50px;
+    margin: 20px;
+    width: 500px;
+}
+
+.d-content a{
+    text-decoration: none;
+    padding: 10px 60px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+.d-content ul li{
+    margin-top: 30px;
+}
+.button{
+    margin-top: 100px;
+}

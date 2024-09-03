@@ -1,0 +1,23 @@
+.Heading{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+}
+.Heading h1{
+    padding: 5px;
+    margin-left: 20px;
+}
+.btn{
+    padding: 30px;
+}
+.Heading a{
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 10px 30px;
+    font-weight: bold;
+}
