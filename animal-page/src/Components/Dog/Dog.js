@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import './Home.css';
-import { getAll, getAllimages } from '../../ApiServer/ApiServer';
+import './Dog.css';
+import { getAll , getAllimages} from '../../ApiServer/ApiServer';
+
 
 function Home() {
-    const [breeds, setBreeds] = useState([]);
+    const[breeds, setBreeds] = useState([]);
     const[search , setSearch] = useState('');
 
     useEffect(() => {
@@ -35,8 +36,6 @@ function Home() {
     const filterdBreeds = breeds.filter((breed)=>
                     breed.name.toLowerCase().includes(search.toLowerCase()));
 
-
-
     return (
         <div>
 
@@ -50,7 +49,7 @@ function Home() {
 
         <div className='main'>
             {filterdBreeds.map((breed) => (
-                <div className='container' key={breed.id}>
+                <div className='container' >
                     <div className='images'>
                         <img 
                             src={breed.imageUrl} 
@@ -63,8 +62,6 @@ function Home() {
                 </div>
             ))}
         </div>
-
-
         </div>
     );
 }

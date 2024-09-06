@@ -2,8 +2,10 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
-import Home from '../Home/Home'
+import Dog from '../Dog/Dog'
 import Details from '../Details/Details'
+import Home from '../Cat/Home/Home'
+import CatDetails from '../Cat/Details/CatDetails'
 
 function RouteLayout() {
   return (
@@ -11,8 +13,10 @@ function RouteLayout() {
     <Router>
         <Header/>
         <Routes>
-            <Route path='/' element={<Home/>}></Route>
+            <Route path='/' element={<Dog/>}></Route>
             <Route path='/details/:id' element={<Details/>}></Route>
+            <Route path='/cat' element={<Home/>}></Route>
+            <Route path='/catdetails/:id' element={<CatDetails/>}></Route>
         </Routes>
         <Footer/>
     </Router>
