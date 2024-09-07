@@ -1,0 +1,61 @@
+.m-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 560px;
+}
+.m-dog{
+    height: 400px;
+    width: 400px;
+    margin: 30px;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: width 1s , height 1s;
+}
+.m-dog:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 20px;
+    height: 500px;
+    width: 500px;
+}
+.m-cat{
+    height: 400px;
+    width: 400px;
+    margin: 30px;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: width 1s , height 1s;
+}
+.m-cat:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 20px;
+    height: 500px;
+    width: 500px;
+}
+.m-dog img{
+    height: 400px;
+    width: 400px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: width 1s , height 1s;
+}
+.m-cat img{
+    height: 400px;
+    width: 400px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: width 1s , height 1s;
+} 
+
+.m-dog img:hover{
+    height: 500px;
+    width: 500px;
+}
+.m-cat img:hover{
+    height: 500px;
+    width: 500px;
+}

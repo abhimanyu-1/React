@@ -8,6 +8,7 @@
 .Heading h1{
     padding: 5px;
     margin-left: 20px;
+    cursor: pointer;
 }
 .btn{
     padding: 30px;

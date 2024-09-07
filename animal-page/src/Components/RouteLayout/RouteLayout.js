@@ -6,6 +6,7 @@ import Dog from '../Dog/Dog'
 import Details from '../Details/Details'
 import Home from '../Cat/Home/Home'
 import CatDetails from '../Cat/Details/CatDetails'
+import Main from '../Home/Main'
 
 function RouteLayout() {
   return (
@@ -13,7 +14,8 @@ function RouteLayout() {
     <Router>
         <Header/>
         <Routes>
-            <Route path='/' element={<Dog/>}></Route>
+            <Route path='/' element={<Main/>}></Route>
+            <Route path='/dog' element={<Dog/>}></Route>
             <Route path='/details/:id' element={<Details/>}></Route>
             <Route path='/cat' element={<Home/>}></Route>
             <Route path='/catdetails/:id' element={<CatDetails/>}></Route>

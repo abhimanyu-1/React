@@ -4,6 +4,8 @@ import { getAllCat ,getAllCatimages} from '../../../ApiServer/ApiServer';
 
 function Home() {
     const[catBreeds,setCatBreeds] = useState([])
+    const[search,setSearch] = useState('')
+
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -34,13 +36,21 @@ function Home() {
         fetchData();
     }, []);
 
-    
+    const HandleInput = (event) => {
+        setSearch(event.target.value);
+    };
+
+    const catFilter = catBreeds.filter((breed) =>
+        breed.name.toLowerCase().includes(search.toLowerCase())
+    );
 
   return (
       <div>
             <div className='search'>
                 <input type='text' 
                     placeholder='Type the name for seaarch'
+                    onChange={HandleInput}
+                    value={search}
                     >
                 </input>
             </div>
@@ -48,7 +58,7 @@ function Home() {
 
             <div className='main'>
                 {
-                    catBreeds.map((breeds)=>(
+                    catFilter.map((breeds)=>(   
                         <div className='container' >
                         <div className='images'>
                             <img 

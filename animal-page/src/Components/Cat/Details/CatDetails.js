@@ -14,7 +14,7 @@ function CatDetails() {
                 const catWithImages = await getAllCatimages(catDetails.reference_image_id);
                 const data = {
                     ...catDetails,
-                    imgUrl : catWithImages.url,
+                    imgUrl : catWithImages.url
             }
             setCat(data)
             }
